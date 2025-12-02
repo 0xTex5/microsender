@@ -1,4 +1,4 @@
-// Base code made by Git-coder-plus
+ // Base code made by Git-coder-plus
 
 radio.onReceivedNumber(function (receivedNumber) {
     basic.showNumber(receivedNumber)  // when a number ID is sent it will detect the number that was sent to it and display it.
@@ -21,8 +21,6 @@ basic.forever(function () {
 })
 
 // end of base code made by me git-coder plus
-let senderID = 2; 
-radio.setGroup(1);
 
 input.onButtonPressed(Button.A, function () {
 
