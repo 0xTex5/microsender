@@ -9,19 +9,17 @@ radio.onReceivedNumber(function (receivedNumber) {
 radio.setGroup(1);
 radio.setTransmitPower(1);
 
-let id = 1;
+let clientId = 1;
 
-basic.showNumber(id);
+basic.showNumber(clientId);
 basic.pause(2000);
 basic.clearScreen();
 
 basic.forever(function () {
-    radio.sendNumber(id);
+    radio.sendNumber(clientId);
     basic.pause(200);
 })
 
-let senderID = 2; 
-radio.setGroup(1);
 
 input.onButtonPressed(Button.A, function () {
 
