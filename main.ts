@@ -9,7 +9,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 radio.setGroup(1); // this is our radio group
 radio.setTransmitPower(1); // we should make a setting to change the transmit power
 
-let id = 1 // when we upload this code to the microbit use a unique ID
+let id = 1; // when we upload this code to the microbit use a unique ID
 
 let letters: Array<string> = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 let letterQueue = 0;
@@ -35,8 +35,8 @@ input.onButtonPressed(Button.A, function() {
 })
 input.onButtonPressed(Button.B, function() {
     letterQueue = letterQueue + 1;
-    if (letterQueue > 10) {
-        letterQueue = 10;
+    if (letterQueue > 26) {
+        letterQueue = 26;
     }
     mainLetter = letters[letterQueue];
 })
