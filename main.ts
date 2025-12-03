@@ -31,12 +31,14 @@ input.onButtonPressed(Button.A, function() {
     if (letterQueue < 0) {
         letterQueue = 0;
     }
+    mainLetter = letters[letterQueue];
 })
 input.onButtonPressed(Button.B, function() {
     letterQueue = letterQueue + 1;
     if (letterQueue > 10) {
         letterQueue = 10;
     }
+    mainLetter = letters[letterQueue];
 })
 input.onPinPressed(TouchPin.P1, function() {
     
